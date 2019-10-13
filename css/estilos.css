@@ -1,0 +1,312 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;  /*Cambia el estilo de letra */
+  color: #3333333;
+  background-color: black;
+}
+.header{
+  background-color: Black;
+}
+
+.header-wrapper{
+ max-width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ overflow: hidden; /*cambia el comportamiendo del padre con los elemntos que salen de su ancho y alto
+ en este caso los float del menu*/
+
+}
+
+.header-logo{
+  float: left;
+  height: 60px;
+}
+.header-menu{
+  float: right;
+}
+
+.header-menu-wrapper{
+  margin: 0;
+
+  padding: 0;
+  list-style: none;   /*Quita los estilos de la lista del menu*/
+  font-size: 0;
+}
+.header-menu-item{
+  display:inline-block;
+
+  font-size: 18px;
+}
+.link{
+  text-decoration: none;
+  color: #43A230;
+}
+.header-menu-link{
+  height: 60px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgb(0, 0, 0,0.2);
+}
+.header-menu-link:hover{/*psudoclase hover cuando se pise el elemento quiero que se comporte así:*/
+  background-color: rgb(20,100,100,0.7); /*Uso el metodo de color rgb por que no se busca que cambie el color sino que baje o aumente su luz*/
+
+}
+
+
+.cover{
+  background-image: url('../img/portada.png');
+  background-position: center;
+  background-size: cover;
+}
+.cover-wrapper{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  text-align: center;
+}
+.cover-photo-container{
+  margin-bottom: 40px;
+}
+.cover-photo{
+  border-radius: 50%;
+}
+.cover-text{
+  background-color: rgba(20,100,100,0.7);
+  color: #ffffff;
+  display: inline-block;
+  padding: 30px;
+
+}
+
+.cover-title{
+  font-size: 40px;
+  margin: 10px;
+  text-transform: uppercase; /*PONE EN MAYUSCULA EL TEXTO*/
+
+}
+.cover-sub-title{
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.title-underline{
+  color: #ffffff;
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-decoration: underline; /*SUBRALLADO*/
+
+
+}
+
+.title-underline span{
+  display: inline-block;
+  border-bottom: 8px solid #43A230;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cover-description{
+  color: #ffffff;
+  background-color: black;
+  padding: 10px;
+  font-size: 18px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.cover-description span{
+  color: #765bf6;
+  font-weight: 700;
+
+}
+.text-center{
+  text-align: center;
+
+  padding-bottom: 10px;
+
+}
+.btn-blue{
+  background: transparent;
+  display:inline-block;
+  color: #43A230;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border: 3px solid #43A230;
+  padding: 10px 15px;
+  transition: background-color 0.5s, 0.5s;
+
+}
+.btn-blue:hover{
+  background-color: #43A230;
+  color: #ffffff;
+}
+.skills-wrapper{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+}
+.skills-text{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 10px 0;
+  padding: 10px 0;
+  overflow: hidden;
+
+}
+.skills-name{
+  float: left;
+
+}
+.skills-score{
+  float: right;
+}
+
+/*Creamos la barra de habilidades*/
+
+
+.skills-bar{
+
+  width: 100%;
+  height: 30px;
+  background: #ffffff;
+}
+
+.skills-bar-fulling{
+  background-color: #43A230;
+  height: 30px;
+  display: inline-block;
+}
+
+/*Damos diseño al portafolio*/
+.works-wrapper{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.works-item{
+  display: inline-block;
+  width: 31%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: #ffffff;
+  margin-top: 10px;
+  text-align: left;
+  border-radius: 15px;
+}
+.works-item-img{
+  width: 100%;
+  border-radius: 15px
+}
+.works-item-description .btn-blue{
+  display: block;
+}
+.works-item-description{
+  padding: 10px;
+}
+.work-item-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #43A230;
+}
+.work-item-client{
+  font-size: 18px;
+}
+.work-item-client a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #765bf6;
+}
+.contact-form{
+  max-width: 1200px;
+  margin-left:auto;
+  margin-right: auto;
+}
+.contact-row{
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  overflow: hidden;
+}
+.contact-column{
+  width: 45%;
+}
+.contact-column.left{
+  float: left;
+}
+.contact-column.right{
+  float: right;
+}
+.contact-column label{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display:  inline-block;
+  padding: 0 5px;
+
+}
+.contact-column .contac-input-text{
+  background: #ffffff;
+  border: 0px;
+  border-bottom: 3px solid #43A230;
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contact-column.--width100{
+  width: 100%;
+}
+.contact-column textarea{
+  background: #ffffff;
+  border: 0;
+  border-bottom: 6px solid #43A230;
+  width: 100%;
+  height: 150px;
+}
+.footer{
+  background-image: url('../img/portada.png');
+  background-position: center;
+  background-size: cover;
+}
+.footer-wrapper{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+}
+.footer-text{
+  color: white;
+  font-size: 18px;
+}
+.footer-text a{
+  color: red;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-text .icon{
+  color: red;
+}
