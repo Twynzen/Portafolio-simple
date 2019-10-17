@@ -1,4 +1,4 @@
-.galeria{
+.webs{
   width: 90%;
   margin: auto;
   list-style: none;
@@ -9,12 +9,13 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.galeria li {
-  margin: 5px;
+.webs li {
+  margin: 15px;
+  
 }
-.galeria img {
-width: 150px;
-height: 100px;
+.webs img {
+width: 600px;
+height: 380px;
 
 }
 /*Estilos del modal*/
