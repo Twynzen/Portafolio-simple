@@ -217,7 +217,7 @@
           </header>
           <p class="work-item-client"> Mis titulos</a></p>
           <div class="text-center">
-            <a href="file:///E:/Daniel/Programaci%C3%B3n/Proyectos/Portafolio/front/certificados.html" class="btn-blue" >Ver documentos</a>
+            <a href="https://twinzeneldesarrollador.000webhostapp.com/certificados.html" class="btn-blue" >Ver documentos</a>
           </div>
         </div>
       </article>
@@ -233,7 +233,7 @@
           </header>
           <p class="work-item-client"> Algunas webs</a></p>
           <div class="text-center">
-            <a href="file:///E:/Daniel/Programaci%C3%B3n/Proyectos/Portafolio/front/webs.html" class="btn-blue" ">Visitar web</a>
+            <a href="https://twinzeneldesarrollador.000webhostapp.com/webs.html" class="btn-blue" >Visitar web</a>
           </div>
         </div>
       </article>
@@ -248,41 +248,44 @@
         <span>Contactame</span>
       </h1>
     </header>
-    <form action="/messages.php" method="post" class="contact-form" >
-      <div class="contact-row">
-        <div class="contact-column left">
-          <div>
-              <label for="useremail">Correo</label>
-      </div>
-        <div> <input id="useremail" name="useremail" type="email" class="contac-input-text"  required/>
+    <!-- Formulario -->
+    <form action="enviado.php" method="post" class="contact-form" >
+        <div class="contact-row">
+          <!-- Correo -->
+          <div class="contact-column left">
+            <div>
+                <label for="useremail">Correo</label>
+              </div>
+              <div>
+               <input id="useremail" name="useremail" type="email" class="contac-input-text"  required/>
+              </div>
           </div>
-        </div>
-        <div class="contact-column right">
+              <!-- Nombre -->
+              <div class="contact-column right">
+                <div>
+                  <label for="username">Nombre</label>
+                </div>
+                <div>
+                   <input id="username" name="username" type="text" class="contac-input-text"  required/>
+                </div>
+              </div>
+            </div>
+            <!--Mensaje -->
+            <div class="contact-row">
+              <div class="contact-column --width100">
+                <div >
+                  <label for="usermessage">Mensaje</label>
+              </div>
+                <textarea id="usermessage" name="usermessage" rows="3" cols="80" required></textarea>
+              </div>
+              </div>
+                <!--Boton -->
+                <div class="text-center">
+                    <input class="btn-blue" type="submit"  value="Enviar" />
+                    </div>
 
-        <div>
-        <label for="username">Nombre</label>
-        </div>
-        <div> <input id="username" name="username" type="text" class="contac-input-text"  required/>
-        </div>
-        </div>
-      </div>
+      </form>
 
-
-
-
-
-      <div class="contact-row">
-        <div class="contact-column --width100">
-          <div >
-            <label for="usermessage">Mensaje</label>
-          </div>
-          <textarea id="usermessage" name="usermessage" rows="3" cols="80" required></textarea>
-        </div>
-      </div>
-      <div class="text-center">
-        <input class="btn-blue" type="submit"  value="Enviar" />
-      </div>
-    </form>
   </section>
   <!--Esta es la seccion del footer -->
   <footer class="footer">
