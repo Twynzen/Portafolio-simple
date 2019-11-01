@@ -7,6 +7,14 @@ body{
   color: #3333333;
   background-color: black;
 }
+.contenedor{
+width: 90%;
+max-width: 1400px;
+margin: 0 auto;
+overflow:hidden;
+
+}
+
 .header{
   background-color: Black;
 }
@@ -309,4 +317,23 @@ body{
 
 .footer-text .icon{
   color: red;
+}
+
+@media screen and (max-width:800px) {
+  .works-item-img {
+    display: none;
+}
+.works-item-description .btn-blue{
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width:400px) {
+  .works-item-img {
+    display: none;
+}
+.works-item-description .btn-blue{
+  width: 100%;
+}
 }
