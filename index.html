@@ -89,6 +89,7 @@
           <li class="skills-item">
               <div class="skills-text">
                 <span class="skills-name">
+
                   HTML
                 </span>
                 <span class="skills-score">
@@ -96,8 +97,21 @@
                 </span>
               </div>
               <div class="skills-bar">
-                  <div class="skills-bar-fulling" style="width: 50%;">
-                  </div>
+
+                  <progress value="0%" max="100" id="dynamic" class="skills-bar-fulling" style="width: 50%; ">
+                  </progress>
+                  <script>
+
+        const elem =  document.getElementById('dynamic');
+
+        setInterval(() => {
+          elem.value+=1;
+          if (elem.value === 100) {
+            elem.value = 0;
+          }
+                }, 20);
+
+      </script>
               </div>
           </li>
           <li class="skills-item">
